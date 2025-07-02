@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/hasnain-tanoli/connect-p/issues"
   },
-  "homepage": "https://github.com/hasnain-tanoli/connect-p#readme"
+  "homepage": "https://github.com/hasnain-tanoli/connect-p#readme",
+  "dependencies": {
+    "stream-chat": "^9.10.0"
+  }
 }
