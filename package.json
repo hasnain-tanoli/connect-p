@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "vercel-build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "npm run start --prefix backend"
   },
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/hasnain-tanoli/connect-p/issues"
   },
-  "homepage": "https://github.com/hasnain-tanoli/connect-p#readme"
+  "homepage": "https://github.com/hasnain-tanoli/connect-p#readme",
+  "dependencies": {
+    "stream-chat": "^9.10.0"
+  }
 }
