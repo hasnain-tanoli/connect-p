@@ -57,7 +57,6 @@ export async function signup(req, res) {
       httpOnly: true,
       sameSite: process.env.NODE_ENV === "production" ? "none" : "strict",
       secure: process.env.NODE_ENV === "production",
-      domain: process.env.NODE_ENV === "production" ? ".railway.app" : undefined,
     });
 
     res.status(201).json({ success: true, user: newUser });
@@ -94,7 +93,6 @@ export async function login(req, res) {
       httpOnly: true,
       sameSite: process.env.NODE_ENV === "production" ? "none" : "strict",
       secure: process.env.NODE_ENV === "production",
-      domain: process.env.NODE_ENV === "production" ? ".railway.app" : undefined,
     });
 
     res.status(200).json({ success: true, user });
